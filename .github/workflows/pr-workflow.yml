@@ -1,0 +1,11 @@
+name: Workflow with PR and Manual Triggers
+on:
+  pull_request:
+    types: [opened, synchronize]
+  workflow_dispatch:
+jobs:
+  run-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run steps
+        run: echo "Workflow triggered!"
