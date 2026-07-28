@@ -23,7 +23,7 @@ jobs:
       - name: List files
         run: ls -al
       - name: Install Dependencies
-        run: mun compile
+        run: mvn compile
       - name: Build application
         run: mvn package -DskipTests
       - name: Test application
