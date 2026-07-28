@@ -9,3 +9,12 @@ on:
 jobs:
  my_first_job:
    runs-on: ubuntu-latest
+   
+   steps:
+     - name: Set up JDK 27
+       uses: actions/setup-java@v3
+       with:
+         java-version: '17'
+         distribution: 'zulu'
+     - name: Show java version
+      run: "java --version"
