@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run steps
-        run: echo "Workflow triggered!"
+        run: echo "Workflow developed by v-senko triggered!"
