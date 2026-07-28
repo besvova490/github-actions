@@ -17,9 +17,7 @@ jobs:
       - name: Show java version
         run: java --version
       - name: Checkout code
-        uses: actions/checkout@v6
-        with:
-          ref: jenk
+        uses: actions/checkout@v4
       - name: Show directory
         run: pwd
       - name: List files
